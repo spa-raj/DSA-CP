@@ -21,8 +21,6 @@ Makefile
 *.a
 *.so
 
-# Executables compiled from src/ (no extension), keep sources
-src/*
-!src/*.cpp
-!src/*.h
-!src/*.hpp
+# Compile your binaries into the build dir (e.g. CLion's cmake-build-*),
+# which is already ignored above. If you ever compile manually next to a
+# source file, name the output explicitly and add it here.
