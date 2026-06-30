@@ -5,11 +5,24 @@ Solutions are organized under `dsa/`, `cp/`, and `CPP_Intro/`.
 
 ## Layout
 
-| Folder       | Contents                                      |
-|--------------|-----------------------------------------------|
-| `CPP_Intro/` | C++ basics and intro exercises                |
-| `dsa/`       | Data structures & algorithms practice         |
-| `cp/`        | Competitive programming (Codeforces, etc.)    |
+| Folder       | Contents                                                  |
+|--------------|-----------------------------------------------------------|
+| `CPP_Intro/` | C++ basics and intro exercises                            |
+| `dsa/`       | DSA practice, organized **by pattern** (e.g. `graphs/`)   |
+| `cp/`        | CP practice, organized **by platform** (e.g. `codeforces/`)|
+| `templates/` | Starter skeletons (not built; copy into a topic folder)   |
+
+## Adding a solution
+
+Copy the relevant template into the right folder and rename it:
+
+```bash
+cp templates/dsa_solution.cpp dsa/two-pointers/two_sum.cpp     # DSA, by pattern
+cp templates/cp_solution.cpp  cp/codeforces/1850A.cpp          # CP, by platform
+```
+
+Fill in the header (link + 1-line summary + approach/complexity). CMake picks up
+the new file automatically on the next configure — no manual target needed.
 
 ## Build
 
