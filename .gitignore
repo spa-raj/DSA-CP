@@ -1,0 +1,28 @@
+# Build directories
+cmake-build-*/
+build/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# IDE / editor
+.idea/
+.vscode/
+.qodo/
+
+# Compiled binaries / objects
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+
+# Executables compiled from src/ (no extension), keep sources
+src/*
+!src/*.cpp
+!src/*.h
+!src/*.hpp
